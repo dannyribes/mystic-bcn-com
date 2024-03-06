@@ -1,0 +1,30 @@
+---
+import { getI18N } from "@/i18n";
+import KitITEM from "@/components/KitITEM.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<section class="flex flex-col items-center justify-center p-4 overflow-hidden">
+  <h2 class="text-4xl font-bold mb-14 mt-4">{i18n.Exp_KIT_TITLE}</h2>
+  <div class="flex flex-col gap-16 lg:flex-row lg:gap-8">
+    <KitITEM
+      title={i18n.Exp_KIT_SUBTITLE_1}
+      download={i18n.DOWNLOAD_BUTTON}
+      image="/exp-page/nave-empty.webp"
+      link="https://drive.google.com/file/d/1Ny5oxWybh55UNiAnk1lePCaGaybJixAY/view?usp=drive_link"
+    />
+    <KitITEM
+      title={i18n.Exp_KIT_SUBTITLE_2}
+      download={i18n.DOWNLOAD_BUTTON}
+      image="/exp-page/farga-vista-fira.webp"
+      link="https://drive.google.com/file/d/1hyAScxkHyrw468nmDdFZ3aDSvSuBd4iu/view?usp=drive_link"
+    />
+    <KitITEM
+      title={i18n.Exp_KIT_SUBTITLE_3}
+      download={i18n.DOWNLOAD_BUTTON}
+      image="/exp-page/stand-solo.webp"
+      link="https://drive.google.com/file/d/1dsl4YTeHPhXftIFlEvhVE0-vYqlzYth5/view?usp=drive_link"
+    />
+  </div>
+</section>

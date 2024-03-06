@@ -1,0 +1,57 @@
+---
+import { getI18N } from "@/i18n/";
+import KitITEM from "@/components/KitITEM.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<!-- <section class="mx-auto w-full max-w-[1400px] p-6 sm:p-20">
+  <h3
+    class="mx-auto mb-10 text-balance text-center text-xl font-semibold uppercase tracking-wide md:text-4xl"
+  >
+    {i18n.PREFOOTER_VIDEO_TITLE}
+  </h3>
+  <a
+    href="https://moovitapp.com/index/es/transporte_p%C3%BAblico-La_Farga-Barcelona-site_15405438-362"
+    target="_blank"
+    class="block rounded-xl shadow-2xl shadow-white/10"
+  >
+    <img
+      src="/mapa-acceso.webp"
+      alt={i18n.PREFOOTER_VIDEO_TITLE}
+      class="rounded-xl"
+    />
+  </a>
+<lite-youtube
+    class="rounded-xl shadow-2xl shadow-white/10"
+    videoid="acn2dbFnMVQ"
+    videotitle={i18n.PREFOOTER_VIDEO_TITLE}></lite-youtube>
+</section> -->
+<section class="flex flex-col items-center justify-center p-4 overflow-hidden">
+  <h2 class="text-4xl font-bold mb-14 mt-4">{i18n.PREFOOTER_POSTER_TITLE}</h2>
+  <div class="flex flex-col gap-16 lg:flex-row lg:gap-8">
+    <div class="w-full h-64 lg:h-auto lg:w-auto overflow-hidden">
+      <KitITEM
+        download={i18n.DOWNLOAD_BUTTON}
+        image="/cartell-mystic.webp"
+        alt="Descriptive alt text"
+        class="object-cover w-full h-full"
+        link="https://drive.google.com/file/d/1LpHx8hoUyveDnABhzw_RQ_nu_Wl0P-8A/view?usp=drive_link"
+      />
+    </div>
+  </div>
+</section>
+<section class="flex flex-col items-center justify-center p-4 overflow-hidden">
+  <h2 class="text-4xl font-bold mb-14 mt-4">{i18n.PREFOOTER_VIDEO_TITLE}</h2>
+  <div class="flex flex-col gap-16 lg:flex-row lg:gap-8">
+    <KitITEM
+      download={i18n.VIDEO_BUTTON}
+      image="/mapa-acceso.webp"
+      link="https://moovitapp.com/index/es/transporte_p%C3%BAblico-La_Farga-Barcelona-site_15405438-362"
+    />
+  </div>
+</section>
+
+<!-- <script>
+  import "@justinribeiro/lite-youtube";
+</script> -->
