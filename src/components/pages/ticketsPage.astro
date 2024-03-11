@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout
+  title={i18n.SEO.ARCHIVO_TITLE}
+  description={i18n.SEO.ARCHIVO_DESCRIPTION}
+>
+  <main class="py-32 mt-10 mx-auto w-full max-w-screen-xl px-6">
+    <section class="w-full flex justify-between gap-4 flex-wrap">
+      <div class="text-center flex flex-col gap-10 items-center">
+        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
+        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >Friday Red Hall</a
+        >
+      </div>
+      <div class="text-center flex flex-col gap-10 items-center">
+        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
+        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >Saturday Red Hall
+        </a>
+      </div>
+      <div class="text-center flex flex-col gap-10 items-center">
+        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
+        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >Sunday Red Hall
+        </a>
+      </div>
+      <div class="text-center flex flex-col gap-10 items-center">
+        <img src="/cartell-mystic.webp" class="w-[250px] h-auto" alt="" />
+        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >All Three Days
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

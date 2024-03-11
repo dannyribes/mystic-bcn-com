@@ -1,0 +1,86 @@
+---
+import SpeakerCard from "./SpeakerCard.astro";
+import { getI18N } from "@/i18n";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const { spaceTime, free = false } = Astro.props;
+---
+
+<div class="container mx-auto flex flex-col items-center">
+  <a
+    href="/"
+    class="text-center bg-[#222B5B] px-6 py-3 rounded-md font-base font-semibold mb-6 text-white"
+    >{spaceTime}</a
+  >
+  <div class="flex flex-col md:flex-row items-center gap-4">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-full md:w-1/2 flex-wrap">
+        <SpeakerCard
+          imageSrc="/speakers/potrait-1.jpg"
+          speakerName="Andrew"
+          customClass=" w-full md:w-1/2"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+        <SpeakerCard
+          imageSrc="/speakers/potrait-2.jpg"
+          speakerName="Andrew"
+          customClass="w-full md:w-1/2"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+
+        <SpeakerCard
+          imageSrc="/speakers/potrait-3.jpg"
+          speakerName="Andrew"
+          customClass="w-full"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+      </div>
+
+      {/* Second set of cards */}
+      <div class="flex w-full md:w-1/2 flex-wrap">
+        <SpeakerCard
+          imageSrc="/speakers/potrait-4.jpg"
+          speakerName="Andrew"
+          customClass="w-full"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+
+        <SpeakerCard
+          imageSrc="/speakers/potrait-5.jpg"
+          speakerName="Andrew"
+          customClass="w-full md:w-1/2"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+
+        <SpeakerCard
+          imageSrc="/speakers/potrait-6.jpg"
+          speakerName="Andrew"
+          customClass="w-full md:w-1/2"
+          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+        />
+      </div>
+    </div>
+    {
+      free ? (
+        ""
+      ) : (
+        <div>
+          <a
+            href={translatePath("/entradas/")}
+            class="bg-red-600 text-white px-6 py-3 rounded-md w-fit"
+          >
+            Tickets
+          </a>
+        </div>
+      )
+    }
+  </div>
+</div>

@@ -1,0 +1,24 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import HeroContainer from "@/components/HeroContainer.astro";
+import Button from "@/components/Button.tsx";
+
+import { getI18N } from "@/i18n";
+import Editions from "../Editions";
+import Galeria from "../../pages/ca/galeria.astro";
+
+const edicion = "2";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+import GalleryComponent from "../GalleryComponent.tsx";
+---
+
+<Layout
+  title={i18n.SEO.ARCHIVO_TITLE}
+  description={i18n.SEO.ARCHIVO_DESCRIPTION}
+>
+  <main class="py-24">
+    <GalleryComponent i18n={i18n} client:load />
+  </main>
+</Layout>

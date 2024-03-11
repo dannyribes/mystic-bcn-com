@@ -1,0 +1,21 @@
+---
+const { imageSrc, speakerName, speakerDescription, customClass } = Astro.props;
+---
+
+<div class={`${customClass} p-1 md:p-2 group`}>
+  <div class="relative h-full">
+    <img
+      alt="gallery"
+      class="block h-full w-full rounded-lg object-cover object-center group-hover:opacity-75 transition-opacity"
+      src={imageSrc}
+    />
+    <div
+      class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+    >
+      <div class="text-white text-center">
+        <h4>{speakerName}</h4>
+        <p>{speakerDescription}</p>
+      </div>
+    </div>
+  </div>
+</div>
