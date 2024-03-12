@@ -1,8 +1,8 @@
 ---
-const { imageSrc, speakerName, speakerDescription, customClass } = Astro.props;
+const { imageSrc, speakerName, customClass } = Astro.props;
 ---
 
-<div class={`${customClass} p-1 md:p-2 group`}>
+<div class={`${customClass} p-1 md:p-2 group w-full`}>
   <div class="relative h-full">
     <img
       alt="gallery"
@@ -14,7 +14,6 @@ const { imageSrc, speakerName, speakerDescription, customClass } = Astro.props;
     >
       <div class="text-white text-center">
         <h4>{speakerName}</h4>
-        <p>{speakerDescription}</p>
       </div>
     </div>
   </div>

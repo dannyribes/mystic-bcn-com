@@ -14,58 +14,54 @@ const translatePath = useTranslatedPath(lang);
 const { spaceTime, free = false } = Astro.props;
 ---
 
-<div class="container mx-auto flex flex-col items-center">
+<div class="flex flex-col items-center w-fit">
   <a
     href="/"
     class="text-center bg-[#222B5B] px-6 py-3 rounded-md font-base font-semibold mb-6 text-white"
     >{spaceTime}</a
   >
   <div class="flex flex-col md:flex-row items-center gap-4">
-    <div class="-m-1 flex flex-wrap md:-m-2">
-      <div class="flex w-full md:w-1/2 flex-wrap">
+    <div class="flex flex-wrap">
+      <div class="flex w-full flex-wrap">
         <SpeakerCard
           imageSrc="/speakers/potrait-1.jpg"
           speakerName="Andrew"
-          customClass=" w-full md:w-1/2"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+          customClass="w-5/12"
         />
         <SpeakerCard
           imageSrc="/speakers/potrait-2.jpg"
           speakerName="Andrew"
-          customClass="w-full md:w-1/2"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
-        />
-
-        <SpeakerCard
-          imageSrc="/speakers/potrait-3.jpg"
-          speakerName="Andrew"
-          customClass="w-full"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+          customClass="w-7/12"
         />
       </div>
-
-      {/* Second set of cards */}
-      <div class="flex w-full md:w-1/2 flex-wrap">
-        <SpeakerCard
+      <div class="flex w-full flex-wrap">
+         <SpeakerCard
+          imageSrc="/speakers/potrait-3.jpg"
+          speakerName="Andrew"
+         customClass="w-7/12"
+        />
+          <SpeakerCard
           imageSrc="/speakers/potrait-4.jpg"
           speakerName="Andrew"
-          customClass="w-full"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+         customClass="w-5/12"
         />
 
+      </div>
+      <div class="flex w-full  flex-wrap">
+      
         <SpeakerCard
           imageSrc="/speakers/potrait-5.jpg"
           speakerName="Andrew"
-          customClass="w-full md:w-1/2"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
+          customClass="w-full "
+           customClass="w-5/12"
         />
 
         <SpeakerCard
           imageSrc="/speakers/potrait-6.jpg"
           speakerName="Andrew"
-          customClass="w-full md:w-1/2"
-          speakerDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quo magnam"
-        />
+          customClass="w-full"
+            customClass="w-7/12"
+=        />
       </div>
     </div>
     {

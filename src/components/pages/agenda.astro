@@ -4,7 +4,7 @@ import { getI18N } from "@/i18n";
 import RedHallTable from "../Tables/RedHallTable.astro";
 import GreenHallTable from "../Tables/GreenHallTable.astro";
 import WorkshopsTable from "../Tables/WorkshopsTable.astro";
-import SpeakerTabs from "../Speakers/SpeakerTabs.astro";
+import SpeakersGrid from "../Speakers/SpeakersGrid.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
@@ -13,45 +13,57 @@ const i18n = getI18N({ currentLocale });
   title={i18n.SEO.ARCHIVO_TITLE}
   description={i18n.SEO.ARCHIVO_DESCRIPTION}
 >
-  <main class="py-24 mx-auto w-full max-w-screen-xl p-4 px-6">
-    <div class="">
+  <main class="overflow-hidden">
+    <div class="pt-24 mx-auto w-full max-w-screen-xl px-6">
       <nav class="tabs flex flex-col md:flex-row mt-12">
         <button
           data-target="panel-1"
           class="tab active flex-1 py-4 text-xl font-bold px-6 block rounded-t-2xl shadow-[3px_-6px_5px_#1a1a1a33] text-white focus:outline-none"
         >
-          Description
+         Red Hall
         </button>
         <button
           data-target="panel-2"
           class="tab py-4 px-6 flex-1 block text-xl font-bold rounded-t-2xl text-white shadow-[3px_-6px_5px_#1a1a1a33] focus:outline-none"
         >
-          Map and Street View
+          Green Hall
         </button>
         <button
           data-target="panel-3"
           class="tab py-4 px-6 flex-1 block text-xl font-bold rounded-t-2xl text-white shadow-[3px_-6px_5px_#1a1a1a33] focus:outline-none"
         >
-          Other info
+         Workshops
         </button>
       </nav>
     </div>
 
-    <div id="panels">
+    <div id="panels" class="px-4">
       <div class="panel-1 active tab-content py-5">
         <RedHallTable />
+        <div class="flex-col xl:flex-row flex w-screen gap-2">
+      <SpeakersGrid spaceTime="Red Hall Friday" />
+      <SpeakersGrid spaceTime="Red Hall Saturday" />
+      <SpeakersGrid spaceTime="Red Hall Sunday" />
+        </div>
       </div>
       <div class="panel-2 tab-content py-5">
         <GreenHallTable />
+       <div class="flex-col xl:flex-row flex w-screen gap-2">
+          <SpeakersGrid spaceTime="Green Hall Friday" free={true} />
+      <SpeakersGrid spaceTime="Green Hall Saturday" free={true} />
+      <SpeakersGrid spaceTime="Green Hall Sunday" free={true} />
+        </div>
       </div>
       <div class="panel-3 tab-content py-5">
         <WorkshopsTable />
+       <div class="flex-col xl:flex-row flex w-screen gap-2">
+          <SpeakersGrid spaceTime="Workshops Friday" />
+      <SpeakersGrid spaceTime="Workshops Saturday" />
+      <SpeakersGrid spaceTime="Workshops Sunday" />
+        </div>
       </div>
     </div>
   </main>
-  <section class="py-24 mx-auto w-full max-w-screen-xl p-4 px-6">
-    <SpeakerTabs />
-  </section>
 </Layout>
 <script>
   const tabs = document.querySelectorAll(".tabs");
