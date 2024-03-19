@@ -8,8 +8,15 @@
 		"Exp_DESCRIPTION": "Descubre cómo convertirte en expositor del Mystic Abril 2024",
 		"Pon_TITLE": "Contratación de Ponencias y Talleres del Mystic Abril 2024",
 		"Pon_DESCRIPTION": "Averigua quien va a venir al Mystic Abril 2024",
+		"Agenda_TITLE": "Agenda de Ponencias y Talleres del Mystic Abril 2024",
+		"Agenda_DESCRIPTION": "Las Ponencias y Talleres del Mystic al detalle",
+		"Tickets_TITLE": "Venta de entradas a las Ponencias y Talleres del Mystic Abril 2024",
+		"Tickets_DESCRIPTION": "Entradas para la Sala VIP del Mystic Abril 2024",
+		"Gallery_TITLE": "Contratación de Ponencias y Talleres del Mystic Abril 2024",
+		"Gallery_DESCRIPTION": "Averigua quien va a venir al Mystic Abril 2024",
 		"ERROR_404_TITLE": "404 Página no encontrada - Mystic Abril 2024",
 		"ERROR_404_DESCRIPTION": "404 Página no encontrada - Mystic Abril 2024"
+
 	},
 	"HEADER": {
 		"LOGO": "Volver a la página de inicio del Mystic"
@@ -33,7 +40,7 @@
 	"BENTO_SUBTITLE_3": "Zona de expositores ubicada a pie de calle de LIBRE ACCESO para el público asistente al evento, y con una superficie total disponible de 3.000 m2",
 	"BENTO_CONTENT_3": "          ",
 	"BENTO_TITLE_4": "Compra entradas de Mystic International:",
-	"BENTO_CONTENT_4": "Llámanos al 640-34.19.84 (Mónica) o al 696-62.83.77 (Daniel) o envíanos un mensaje a <strong>mystic33bcn@gmail.com</strong> con la transferencia a la Cuenta del Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiario DANRIBES, SL) y te haremos llegar tus entradas a tu email",
+	"BENTO_CONTENT_4": "Llámanos al 640-34.19.84 (Mónica) o al 696-62.83.77 (Daniel) o envíanos un mensaje a <strong>mystic33bcn@gmail.com</strong> con la transferencia a la Cuenta del Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiario DANRIBES, SL) y te incluiremos en la lista de asistentes",
 	"VIDEO_ALT": "MYSTIC INTERNATIONAL - Encuentro de las Artes Espirituales de Barcelona",
 	"VIDEO_BUTTON": "INFO",
 	"PREFOOTER_VIDEO_TITLE": "Cómo llegar a MYSTIC International",
@@ -49,7 +56,7 @@
 	"CATEGORY": "Categoría",
 	"LOG_OUT": "Cerrar sesión",
 	"FOOTER": {
-		"DISCLAIMER": "© MYSTIC INTERNATIONAL 2024 Todos los derechos reservados. Web oficial desarrollada por @dannyribes",
+		"DISCLAIMER": "© MYSTIC INTERNATIONAL 2024 Todos los derechos reservados. Web desarrollada por @midudev y su comunidad. Adaptada por @dannyribes",
 		"LEGAL": {
 			"TITLE": "Legal",
 			"NOTICE": "Aviso Legal",
@@ -74,6 +81,39 @@
 	"Exp_TITLE_2": "ENTRADA GRATUITA A LA ZONA DE ESTANDS PARA TODO EL PÚBLICO ASISTENTE AL MYSTIC",
 	"Exp_CONTENT_2_1": "No existe ninguna barrera para que el público que tenga curiosidad, pueda acceder al recinto y pueda ver tu ESTAND.",
 	"Exp_CONTENT_2_2": "               ",
+
+
+
+	"Agenda_TITLE": "Agenda Conferencias Sala VIP",
+	"Agenda_VIP": "Sala VIP",
+	"Agenda_Blue": "Sala AZUL",
+	"Agenda_Purple": "Sala LILA",
+	"Agenda_Time": "Hora",
+	"Agenda_124": "Viernes 12 de Abril",
+	"Agenda_134": "Sábado 13 de Abril",
+	"Agenda_144": "Domingo 14 de Abril",
+	"Agenda_VIP12": "Sala VIP Viernes 12 de Abril",
+	"Agenda_VIP13": "Sala VIP Sábado 13 de Abril",
+	"Agenda_VIP14": "Sala VIP Domingo 14 de Abril",
+	"Agenda_BLUE12": "Sala AZUL Viernes 12 de Abril",
+	"Agenda_BLUE13": "Sala AZUL Sábado 13 de Abril",
+	"Agenda_BLUE14": "Sala AZUL Domingo 14 de Abril",
+	"Agenda_PURPLE12": "Sala LILA Viernes 12 de Abril",
+	"Agenda_PURPLE13": "Sala LILA Sábado 13 de Abril",
+	"Agenda_PURPLE14": "Sala LILA Domingo 14 de Abril",
+	"Agenda_TITLE_AFTER_BR": "",
+	"Agenda_DESCRIPTION_1": "Os presentamos la Agenda de la Sala VIP de MYSTIC International.",
+	"Agenda_DESCRIPTION_2": "Para adquirir las entradas de la Sala VIP para un día en concreto, realizar una transferència a la Cuenta del Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiario DANRIBES, SL) especificando Día en el que se está interesado, Nombre de la persona que adquiere la entrada y Número de DNI o Pasaporte",
+	"Agenda_DESCRIPTION_3": "El coste de las entradas de un solo día es de 95€. En el caso de querer adquirir entradas para los tres días, el coste es de 250€.",
+	"Agenda_DESCRIPTION_4": "Para más información acerca de Talleres o cualquier otro tema de la Agenda, por favor contactar con nosotros: 640-34.19.84 (Mònica) o 696-62.83.77 (Daniel).",
+
+
+	"Tickets_TITLE": "Entradas",
+	"Tickets_FREE": "Entrada GRATUITA",
+	"Tickets_TITLE_AFTER_BR": "Sala VIP de MYSTIC International",
+	"Tickets_DESCRIPTION_1": "El acceso a las <Strong>Salas AZUL y LILA</Strong> es libre i gratuito, pero tanto las ponencias de la <Strong>Sala VIP</Strong> com los <Strong>Talleres</Strong> son de pago.",
+	"Tickets_DESCRIPTION_2": "Adquiere más abajo las entradas a la sala VIP especificando Nombre y Número de DNI, o bien envía un correo a <strong>mystic33bcn@gmail.com</strong> con tu nombre, DNI y una copia de la transferencia a la cuenta del Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiario DANRIBES, SL).",
+	"Tickets_DESCRIPTION_3": "Para adquirir las entradas de los Talleres, llámanos o envía Whatsapp al 640-34.19.84 (Mònica) o al 696-62.83.77 (Daniel).",
 
 	"Pon_TITLE": "Quieres ser PONENTE en el MYSTIC?",
 	"Pon_TITLE_1": "Tienes el espacio que necesitas para tu PONENCIA",

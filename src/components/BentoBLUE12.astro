@@ -1,0 +1,202 @@
+---
+import BentoItem from "@/components/BentoItem.astro";
+import { getI18N } from "@/i18n/";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-12 auto-rows-[30rem] gap-2
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+ <div
+    class="col-span-14 lg:col-span-2 bg-blue-300 p-6 rounded-lg flex items-center justify-center py-2"
+    style="height: 30rem;"
+  >
+    <h2 class="text-lg text-white font-semibold">{i18n.Agenda_BLUE12}</h2>
+  </div>
+  <!-- Button -->
+  <button
+    class="col-span-14 lg:col-span-2 text-white bg-red-500 hover:bg-blue-700 font-bold py-2 px-4 rounded py-2"
+    style="height: 30rem;"
+  >
+    {i18n.Tickets_FREE}
+  </button>
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-4 height: 40rem"
+    title="Coronel Pedro Baños"
+    subtitle="El Resurgir de lo Hispano y sus opositores"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Pedro.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 11h30 Sala VIP"
+    />
+  </BentoItem>
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-4 height-40rem"
+    title="Cristian Contreras (Doc Files)"
+    subtitle="La Octava Civilización del Gran Plan Cósmico"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-800
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Cristian.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 14h Sala VIP"
+    />
+  </BentoItem>
+
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-3 height-40rem"
+    title="Hector (CEO de BVB)"
+    subtitle="La Guerra Invisible"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Hector.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 14/4 10h Sala VIP"
+    />
+  </BentoItem>
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-3 height-40rem"
+    title="Elias GRIMA y Hulio (SoloClima)"
+    subtitle="Huella de Carbono. Patrón de Racionamiento"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Elias.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 14/4 17h Sala VIP"
+    />
+  </BentoItem>
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-3 height-40rem"
+    title="Claudio Briceño (CEO de CodeCrypto)"
+    subtitle="La Nueva Humanidad WEB3"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Claudio.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 14/4 17h Sala VIP"
+    />
+  </BentoItem>
+
+
+
+
+
+  <BentoItem
+    class="col-span-12 lg:col-span-3 height-40rem"
+    title="Adrián Carneiro (SoloClima)"
+    subtitle="Lo que no nos cuentan de la Agenda 2030"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Adrian.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Domingo 14/4 19h Sala VIP"
+    />
+  </BentoItem>
+
+
+</section>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const backgrounds = document.querySelectorAll(
+      ".background"
+    ) as NodeListOf<HTMLElement>;
+
+    if (window.IntersectionObserver == null) {
+      backgrounds.forEach((bkg) => {
+        bkg.style.backgroundImage = "url('" + bkg.dataset.src + "')";
+      });
+      return;
+    }
+
+    function handleIntersection(entries: IntersectionObserverEntry[]) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement;
+          const { style, dataset } = target;
+          // Item has crossed our observation
+          // threshold - load src from data-src
+          style.backgroundImage = "url('" + dataset.src + "')";
+          // Job done for this item - no need to watch it!
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: "100px",
+    });
+
+    backgrounds.forEach((bkg) => observer.observe(bkg));
+  });
+</script>

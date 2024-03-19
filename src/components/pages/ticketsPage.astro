@@ -1,15 +1,28 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import HeroContainer from "@/components/HeroContainer.astro";
+import IntroTickets from "@/components/IntroTickets.astro"
 import { getI18N } from "@/i18n";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
 <Layout
-  title={i18n.SEO.ARCHIVO_TITLE}
-  description={i18n.SEO.ARCHIVO_DESCRIPTION}
+  title={i18n.SEO.Tickets_TITLE}
+  description={i18n.SEO.Tickets_DESCRIPTION}
 >
-  <main class="py-32 mt-10 mx-auto w-full max-w-screen-xl px-6">
+
+  <HeroContainer img="/cartell.webp">
+    <h1
+      class="lg:text-6xl text-5xl text-center uppercase font-tomaso tracking tracking-widest"
+    >
+      
+    </h1>
+  </HeroContainer>
+
+  <main><IntroTickets/></main>
+
+  <main  class="py-32 mt-10 mx-auto w-full max-w-screen-xl px-6">
     <section class="w-full flex justify-between gap-4 flex-wrap">
       <div class="text-center flex flex-col gap-10 items-center">
         <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />

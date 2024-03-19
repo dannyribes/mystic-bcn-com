@@ -1,0 +1,130 @@
+---
+import { getI18N } from "@/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+
+<div
+  class="overflow-x-auto xl:gap-8 gap-4 lg:flex-row flex-col rounded-lg flex justify-center items-center mx-auto w-full max-w-screen-xl p-4 px-6 py-6 lg:py-8"
+>
+  <table
+    class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
+  >
+    <thead class="">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_124"]}</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">10h-12h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Miguel Celades</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">12h - 13h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Iris Carbonell</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">13h30 - 15h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Mònica Freixes</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">15h - 16h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Pedro Amorós</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">16h30 - 18h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">GIMPASF</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">18h30 - 20h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">JL (Mundo Desconocido)</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <table
+      class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
+  >
+    <thead class="">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_134"]}</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">10h-11h15</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Mònica Freixes</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">11h30 - 13h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Dr. Angel Luis Fernández</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">13h10 - 14h45</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Miguel Celades</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">15h - 16h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Marta Ruescas</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">16h45 - 17h45</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Cristian Contreras</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">18h - 20h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">JL (Mundo Desconocido)</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <table
+      class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
+  >
+    <thead class="">
+      <tr>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_144"]}</th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-gray-200">
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">10h-11h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Hector (SoloClima)</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">11h30 - 14h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Coronel Pedro Baños</td>
+      </tr>
+
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">14h - 15h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Cristian Contreras (Doc Files)</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">15h30 - 17h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Claudio Briceño (CodeCrypto)</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">17h - 19h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Elias Grima (SoloClima)</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">19h - 20h</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Adrián Carneiro (SoloClima)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

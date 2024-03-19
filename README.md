@@ -3,7 +3,7 @@
 <h3>
  The MYSTIC International page 
 </h3>
-<p>Created by @dannyribes</p>
+<p>Created by @midudev y su comunidad de desarrolladores y adaptado por @dannyribes</p>
 </div>
 
 <div align="center">
