@@ -8,6 +8,9 @@ import auth from "auth-astro";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), preact(), auth()],
+  buildOptions:{
+    outDir: './dist',
+  },
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en', 'ca'],

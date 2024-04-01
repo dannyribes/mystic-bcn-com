@@ -108,8 +108,13 @@
 	"Tickets_FREE": "Entrada GRATUÏTA",
 	"Tickets_TITLE_AFTER_BR": "Sala VIP de MYSTIC International",
 	"Tickets_DESCRIPTION_1": "L'accés a la <Strong>Sales BLAVA i LILA</Strong> és lliure i gratuït, però tant les ponències de la <Strong>Sala VIP</Strong> com els <Strong>Tallers</Strong> són de pagament.",
-	"Tickets_DESCRIPTION_2": "Adquireix més avall les entrades per a la sala VIP especificant Nom i Número de DNI, o bé envia un correu a <strong>mystic33bcn@gmail.com</strong> amb el teu nom, DNI i una còpia de la transferència al compte de Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiari DANRIBES, SL).",
+	"Tickets_DESCRIPTION_2": "Adquireix més avall les entrades a la sala VIP amb TARJA, especificant NOM, EMAIL i DNI. En cas d'optar per TRANSFERÈNCIA BANCARIA, envía'ns un correu a <strong>mystic33bcn@gmail.com</strong> amb el teu NOM, DNI i una còpia de la transferència al compte del Mystic CAIXESBBXXX ES71 2100 0517 3802 0044 5367 (beneficiari DANRIBES, SL).",
 	"Tickets_DESCRIPTION_3": "Per adquirir les entrades dels Tallers, truca'ns o envia un Whatsapp al 640-34.19.84 (Mònica) o al 696-62.83.77 (Daniel).",
+	"Tickets_3DAYS": "Entrada 3 DIES (250 €)",
+	"Tickets_FRIDAY": "Entrada Divendres (95 €)",
+	"Tickets_SATURDAY": "Entrada Dissabte (95 €)",
+	"Tickets_SUNDAY": "Entrada Diumenge (95 €)",
+
 
 	"Pon_TITLE": "Vols ser PONENT al MYSTIC?",
 	"Pon_TITLE_1": "Tens l'espai que necessites per a la teva PONÈNCIA",

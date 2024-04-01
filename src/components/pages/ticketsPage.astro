@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import HeroContainer from "@/components/HeroContainer.astro";
-import IntroTickets from "@/components/IntroTickets.astro"
+import IntroTickets from "@/components/IntroTickets.astro";
 import { getI18N } from "@/i18n";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -11,41 +11,47 @@ const i18n = getI18N({ currentLocale });
   title={i18n.SEO.Tickets_TITLE}
   description={i18n.SEO.Tickets_DESCRIPTION}
 >
-
   <HeroContainer img="/cartell.webp">
     <h1
       class="lg:text-6xl text-5xl text-center uppercase font-tomaso tracking tracking-widest"
     >
-      
     </h1>
   </HeroContainer>
 
-  <main><IntroTickets/></main>
+  <main><IntroTickets /></main>
 
-  <main  class="py-32 mt-10 mx-auto w-full max-w-screen-xl px-6">
+  <main class="py-32 mt-10 mx-auto w-full max-w-screen-xl px-6">
     <section class="w-full flex justify-between gap-4 flex-wrap">
       <div class="text-center flex flex-col gap-10 items-center">
-        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
-          >Friday Red Hall</a
+        <img src="/SalaVIP_Vie12.webp" alt="" class="w-[250px] h-auto" />
+        <a
+          href="https://es.social-commerce.io/wccXbg"
+          class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >{i18n.Tickets_FRIDAY}</a
         >
       </div>
       <div class="text-center flex flex-col gap-10 items-center">
-        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
-          >Saturday Red Hall
+        <img src="/SalaVIP_Sab13.webp" alt="" class="w-[250px] h-auto" />
+        <a
+          href="https://es.social-commerce.io/gd6F2J"
+          class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >{i18n.Tickets_SATURDAY}
         </a>
       </div>
       <div class="text-center flex flex-col gap-10 items-center">
-        <img src="/ticket-image.png" alt="" class="w-[250px] h-auto" />
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
-          >Sunday Red Hall
+        <img src="/SalaVIP_Dom14.webp" alt="" class="w-[250px] h-auto" />
+        <a
+          href="https://es.social-commerce.io/on3917"
+          class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >{i18n.Tickets_SUNDAY}
         </a>
       </div>
       <div class="text-center flex flex-col gap-10 items-center">
-        <img src="/cartell-mystic.webp" class="w-[250px] h-auto" alt="" />
-        <a href="#" class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
-          >All Three Days
+        <img src="/SalaVIP_TRESDIAS.webp" class="w-[250px] h-auto" alt="" />
+        <a
+          href="https://es.social-commerce.io/Kt03fS"
+          class="bg-red-600 text-white px-6 py-3 rounded-lg w-fit"
+          >{i18n.Tickets_3DAYS}
         </a>
       </div>
     </section>
