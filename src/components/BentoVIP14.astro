@@ -6,7 +6,6 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-
 <section
   class={`
     w-full max-w-[1400px]
@@ -14,7 +13,7 @@ const i18n = getI18N({ currentLocale });
     mx-auto p-6 md:p-12 lg:p-20
   `}
 >
- <!-- <div
+  <!-- <div
     class="col-span-14 lg:col-span-4 bg-blue-300 p-6 rounded-lg flex items-center justify-center py-2"
     style="height: 30rem;"
   >
@@ -41,11 +40,7 @@ const i18n = getI18N({ currentLocale });
       data-src="/blue.webp"
     >
     </div>
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-      set:html=""
-    />
+    <p slot="content" class="max-w-xl text-base md:text-lg" set:html="" />
   </BentoItem>
 
   <BentoItem
@@ -68,8 +63,6 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
   <BentoItem
     class="col-span-12 lg:col-span-4 height-40rem"
     title="Cristian Contreras (Doc Files)"
@@ -90,9 +83,6 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
-
   <BentoItem
     class="col-span-12 lg:col-span-3 height-40rem"
     title="Hector (CEO de BVB)"
@@ -112,10 +102,6 @@ const i18n = getI18N({ currentLocale });
       set:html="Domingo 14 Sala VIP 10h00"
     />
   </BentoItem>
-
-
-
-
 
   <BentoItem
     class="col-span-12 lg:col-span-3 height-40rem"
@@ -157,10 +143,6 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
-
-
   <BentoItem
     class="col-span-12 lg:col-span-3 height-40rem"
     title="Adrián Carneiro (SoloClima)"
@@ -180,14 +162,12 @@ const i18n = getI18N({ currentLocale });
       set:html="Domingo 14 Sala VIP 19h00"
     />
   </BentoItem>
-
-
 </section>
 
 <script>
   document.addEventListener("astro:page-load", () => {
     const backgrounds = document.querySelectorAll(
-      ".background"
+      ".background",
     ) as NodeListOf<HTMLElement>;
 
     if (window.IntersectionObserver == null) {

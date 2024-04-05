@@ -6,15 +6,15 @@ import VIPHallTable from "../Tables/VIPHallTable.astro";
 import BlueHallTable from "../Tables/BlueHallTable.astro";
 import PurpleHallTable from "../Tables/PurpleHallTable.astro";
 import SpeakersGrid from "../Speakers/SpeakersGrid.astro";
-import BentoVIP12 from "@/components/BentoVIP12.astro"
-import BentoVIP13 from "@/components/BentoVIP13.astro"
-import BentoVIP14 from "@/components/BentoVIP14.astro"
-import BentoBLUE12 from "@/components/BentoBLUE12.astro"
-import BentoBLUE13 from "@/components/BentoBLUE13.astro"
-import BentoBLUE14 from "@/components/BentoBLUE14.astro"
-import BentoPURPLE12 from "@/components/BentoPURPLE12.astro"
-import BentoPURPLE13 from "@/components/BentoPURPLE13.astro"
-import BentoPURPLE14 from "@/components/BentoPURPLE14.astro"
+import BentoVIP12 from "@/components/BentoVIP12.astro";
+import BentoVIP13 from "@/components/BentoVIP13.astro";
+import BentoVIP14 from "@/components/BentoVIP14.astro";
+import BentoBLUE12 from "@/components/BentoBLUE12.astro";
+import BentoBLUE13 from "@/components/BentoBLUE13.astro";
+import BentoBLUE14 from "@/components/BentoBLUE14.astro";
+import BentoPURPLE12 from "@/components/BentoPURPLE12.astro";
+import BentoPURPLE13 from "@/components/BentoPURPLE13.astro";
+import BentoPURPLE14 from "@/components/BentoPURPLE14.astro";
 import Intro from "../Intro.astro";
 import IntroAgenda from "../IntroAgenda.astro";
 const { currentLocale } = Astro;
@@ -33,7 +33,6 @@ const i18n = getI18N({ currentLocale });
     </h1>
   </HeroContainer>
 
-
   <main class="overflow-hidden">
     <IntroAgenda />
 
@@ -43,14 +42,14 @@ const i18n = getI18N({ currentLocale });
           data-target="panel-1"
           class="tab active flex-1 py-4 text-xl font-bold px-6 block rounded-t-2xl shadow-[3px_-6px_5px_#1a1a1a33] text-white focus:outline-none"
         >
-         {i18n.Agenda_VIP}
+          {i18n.Agenda_VIP}
         </button>
-        <!-- <button
+        <button
           data-target="panel-2"
           class="tab py-4 px-6 flex-1 block text-xl font-bold rounded-t-2xl text-white shadow-[3px_-6px_5px_#1a1a1a33] focus:outline-none"
         >
           {i18n.Agenda_Blue}
-        </button> -->
+        </button>
         <!-- <button
           data-target="panel-3"
           class="tab py-4 px-6 flex-1 block text-xl font-bold rounded-t-2xl text-white shadow-[3px_-6px_5px_#1a1a1a33] focus:outline-none"
@@ -64,39 +63,39 @@ const i18n = getI18N({ currentLocale });
       <div class="panel-1 active tab-content py-5">
         <VIPHallTable />
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoVIP12/>
+          <BentoVIP12 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoVIP13/>
+          <BentoVIP13 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoVIP14/>
+          <BentoVIP14 />
         </div>
       </div>
 
       <div class="panel-2 tab-content py-5">
         <BlueHallTable />
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoBLUE12/>
+          <BentoBLUE12 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoBLUE13/>
+          <BentoBLUE13 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoBLUE14/>
+          <BentoBLUE14 />
         </div>
       </div>
 
       <div class="panel-3 tab-content py-5">
         <PurpleHallTable />
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoPURPLE12/>
+          <BentoPURPLE12 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoPURPLE13/>
+          <BentoPURPLE13 />
         </div>
         <div class="flex-col xl:flex-row flex w-full gap-2">
-        <BentoPURPLE14/>
+          <BentoPURPLE14 />
         </div>
       </div>
     </div>
