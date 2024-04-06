@@ -4,24 +4,25 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-
 <div
   class="overflow-x-auto xl:gap-8 gap-4 lg:flex-row flex-col rounded-lg flex justify-center items-center mx-auto w-full max-w-screen-xl p-4 px-6 py-6 lg:py-8"
 >
-  <table
-    class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
-  >
+  <table class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl">
     <thead class="">
       <tr>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_124"]}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n.Agenda_Time}</th
+        >
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n["Agenda_124"]}</th
+        >
       </tr>
     </thead>
 
     <tbody class="divide-y divide-gray-200">
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">10h00 - 12h00</td>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">Miguel Celades</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Mònica Freixes</td>
       </tr>
 
       <tr>
@@ -31,30 +32,31 @@ const i18n = getI18N({ currentLocale });
 
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">13h30 - 15h00</td>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">Mònica Freixes</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Miguel Celades</td>
       </tr>
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">15h00 - 17h00</td>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">GINPASF Paranormal</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">Pedro Amorós</td>
       </tr>
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">17h00 - 18h30</td>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">Pedro Amorós</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">GINPASF Paranormal</td>
       </tr>
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">18h30 - 20h00</td>
         <td class="whitespace-nowrap px-4 py-2 text-lg">JL Camacho</td>
       </tr>
-
     </tbody>
   </table>
-  <table
-      class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
-  >
+  <table class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl">
     <thead class="">
       <tr>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_134"]}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n.Agenda_Time}</th
+        >
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n["Agenda_134"]}</th
+        >
       </tr>
     </thead>
 
@@ -85,33 +87,33 @@ const i18n = getI18N({ currentLocale });
         <td class="whitespace-nowrap px-4 py-2 text-lg">18h00 - 20h00</td>
         <td class="whitespace-nowrap px-4 py-2 text-lg">JL Camacho</td>
       </tr>
-
     </tbody>
   </table>
-  <table
-      class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl"
-  >
+  <table class="divide-y-2 w-full flex-1 text-white text-sm rounded-t-2xl">
     <thead class="">
       <tr>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n.Agenda_Time}</th>
-        <th class="whitespace-nowrap px-4 py-2 text-lg text-left">{i18n["Agenda_144"]}</th>
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n.Agenda_Time}</th
+        >
+        <th class="whitespace-nowrap px-4 py-2 text-lg text-left"
+          >{i18n["Agenda_144"]}</th
+        >
       </tr>
     </thead>
 
     <tbody class="divide-y divide-gray-200">
       <tr>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">10h00 - 11h30</td>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">Hector (BVB)</td>
-      </tr>
-
-      <tr>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">11h30 - 14h00</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">10h30 - 12h00</td>
         <td class="whitespace-nowrap px-4 py-2 text-lg">Pedro Baños</td>
       </tr>
 
       <tr>
-        <td class="whitespace-nowrap px-4 py-2 text-lg">14h00 - 15h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">12h30 - 14h00</td>
         <td class="whitespace-nowrap px-4 py-2 text-lg">Cristian Contreras</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">14h00 - 15h30</td>
+        <td class="whitespace-nowrap px-4 py-2 text-lg">UFO Error 404</td>
       </tr>
       <tr>
         <td class="whitespace-nowrap px-4 py-2 text-lg">15h30 - 17h00</td>
