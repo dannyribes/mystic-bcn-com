@@ -82,7 +82,25 @@ const i18n = getI18N({ currentLocale });
       set:html="Viernes 12 Sala Azul 12h30"
     />
   </BentoItem>
-
+  <BentoItem
+    class="col-span-12 lg:col-span-4 height-40rem"
+    title="Pablo Tirado (Tecnologías Saludables)"
+    subtitle="Sana tu Agua, Sánate tu"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Pablo.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Viernes 12 Sala Azul 13h45"
+    />
+  </BentoItem>
   <BentoItem
     class="col-span-12 lg:col-span-4 height-40rem"
     title="Montse Sorli (Geometría Sagrada)"
