@@ -6,7 +6,6 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
 
-
 <section
   class={`
     w-full max-w-[1400px]
@@ -14,7 +13,7 @@ const i18n = getI18N({ currentLocale });
     mx-auto p-6 md:p-12 lg:p-20
   `}
 >
- <!-- <div
+  <!-- <div
     class="col-span-14 lg:col-span-4 bg-blue-300 p-6 rounded-lg flex items-center justify-center py-2"
     style="height: 30rem;"
   >
@@ -27,7 +26,6 @@ const i18n = getI18N({ currentLocale });
   >
     {i18n.Tickets_TITLE}
   </button> -->
-
 
   <BentoItem
     class="col-span-12 lg:col-span-4 height: 40rem"
@@ -42,11 +40,7 @@ const i18n = getI18N({ currentLocale });
       data-src="/speakers/Random.webp"
     >
     </div>
-    <p
-      slot="content"
-      class="max-w-xl text-base md:text-lg"
-      set:html=""
-    />
+    <p slot="content" class="max-w-xl text-base md:text-lg" set:html="" />
   </BentoItem>
   <BentoItem
     class="col-span-12 lg:col-span-4 height: 40rem"
@@ -68,8 +62,6 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
   <BentoItem
     class="col-span-12 lg:col-span-4 height-40rem"
     title="José Luis Camacho (Mundo Desconocido)"
@@ -90,11 +82,8 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
-
   <BentoItem
-    class="col-span-12 lg:col-span-3 height-40rem"
+    class="col-span-12 lg:col-span-4 height-40rem"
     title="Dr. Angel Luis Fernández (Fundación 1A1)"
     subtitle="Otro Mundo, Otra Realidad"
   >
@@ -113,10 +102,8 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
   <BentoItem
-    class="col-span-12 lg:col-span-3 height-40rem"
+    class="col-span-12 lg:col-span-4 height-40rem"
     title="Marta Ruescas (Tienda del Misterio)"
     subtitle="Retorno de la Magia. Conexión con lo Sagrado"
   >
@@ -135,10 +122,8 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
   <BentoItem
-    class="col-span-12 lg:col-span-3 height-40rem"
+    class="col-span-12 lg:col-span-4 height-40rem"
     title="Miguel Celades (Investigador)"
     subtitle="Salud Consciente"
   >
@@ -157,12 +142,28 @@ const i18n = getI18N({ currentLocale });
     />
   </BentoItem>
 
-
-
-
+  <BentoItem
+    class="col-span-12 lg:col-span-4 height-40rem"
+    title="Santi Cabrera (Terapeuta-Chamán de plantas sagradas y Maestro Reiki)"
+    subtitle="Terapia Regenerativa Evolutiva"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/speakers/Santi.webp"
+    >
+    </div>
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html="Sábado 13 Sala VIP 13h30"
+    />
+  </BentoItem>
 
   <BentoItem
-    class="col-span-12 lg:col-span-3 height-40rem"
+    class="col-span-12 lg:col-span-4 height-40rem"
     title="Mònica Freixes (Coach Espiritual)"
     subtitle="Canalización de Metatrón"
   >
@@ -180,14 +181,12 @@ const i18n = getI18N({ currentLocale });
       set:html="Sábado 13 Sala VIP 10h00"
     />
   </BentoItem>
-
-
 </section>
 
 <script>
   document.addEventListener("astro:page-load", () => {
     const backgrounds = document.querySelectorAll(
-      ".background"
+      ".background",
     ) as NodeListOf<HTMLElement>;
 
     if (window.IntersectionObserver == null) {
