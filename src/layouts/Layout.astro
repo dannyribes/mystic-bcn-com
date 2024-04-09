@@ -1,16 +1,16 @@
 ---
-import { ViewTransitions } from "astro:transitions"
-import Header from "@/components/Header.astro"
-import Footer from "@/components/Footer.astro"
-import "@fontsource-variable/onest"
-import { getLangFromUrl } from "@/i18n/utils"
+import { ViewTransitions } from "astro:transitions";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import "@fontsource-variable/onest";
+import { getLangFromUrl } from "@/i18n/utils";
 
 interface Props {
-  description: string
-  title: string
+  description: string;
+  title: string;
 }
 
-const { description, title } = Astro.props
+const { description, title } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 ---
 
@@ -21,7 +21,10 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="robots" content="nofollow, noindex" />
+    <meta
+      name="google-site-verification"
+      content="2WYpIKwLcqHSzFTXEMOrM5Vt_lE5Cwrc0mrZyA0UwEg"
+    />
     <title>{title}</title>
     <link
       rel="preload"
@@ -68,7 +71,6 @@ const lang = getLangFromUrl(Astro.url);
         background: #151a36;
       }
 
-      
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -85,7 +87,6 @@ const lang = getLangFromUrl(Astro.url);
       ::-webkit-scrollbar-thumb:hover {
         background: rgba(255, 255, 255, 0.5);
       }
-      
 
       p {
         color: rgba(255, 255, 255, 0.9);
