@@ -27,6 +27,7 @@
     "@fontsource-variable/onest": "5.0.2",
     "@justinribeiro/lite-youtube": "1.5.0",
     "@libsql/client": "0.4.0-pre.7",
+    "@types/gtag.js": "^0.0.19",
     "astro": "^4.5.2",
     "auth-astro": "4.1.0",
     "canvas-confetti": "^1.9.2",
